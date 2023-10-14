@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Rock+Salt&display=swap');
+
+:root {
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Open Sans";
+    --paragraph-font: Roboto, Helvetica, sans-serif;
+    
+}  
+  
 #content {
     max-width: 1600px; 
     margin: 0 auto; 
@@ -5,15 +15,32 @@
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 .logo {
     width: 80px;
 }
 
+#logo_link {
+    padding-top: 5px;
+}
+
 
 body {
     background-color: #cecccc; 
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+}
+
+h2 {
+    margin: 0;
 }
 
 header {
@@ -22,25 +49,50 @@ header {
 
 nav a {
     text-align: center;
-    color: rgb(24, 231, 235);
+    color: #254052;
     text-decoration: none; 
     font-size: 1.2em;
+    padding: 35px;
 }
 
 nav a:hover {
-    background-color: black;
-    color: rgb(0, 255, 0)
+    background-color: #254052;   
+    color: white;
 }
 
 
+main section img {
+    box-sizing: border-box;
+}
+
+
+.home-title {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2em;
+    margin-top: 10px;    
+}
+
 .home-grid {
     text-align: center;
+}
+
+.rivers-card {
+    margin: 200px 0;
+}
+
+.canyoning-card {
+    margin: 200px 0;
+}
+
+.rapids-card {
+    margin: 200px 0;
 }
 
 .mountains {
     text-align: left;
     display: block;
     width: 50%;
+    margin: 100px 0;
 }
 
 #hero {
@@ -53,18 +105,22 @@ nav a:hover {
 
 .card-img {
     width: 30%;
+    border: 10px solid #d9c2a3;
 }
 
-.book {
+.book, .join {
     background-color: #2106ba; 
     color: rgb(20, 238, 195); 
     text-decoration: none; 
-    font-size: 1.5em; 
+    font-size: 18px; 
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover {
-    background-color: black; 
-    color: rgb(0, 255, 0)  
+    background-color: #254052;   
+    color: white;
 }
 
 .mountains.home-grid {
@@ -72,34 +128,50 @@ nav a:hover {
     text-align: left;
 }
 
-
+/*
 .join {
     background-color: #2106ba; 
     color: rgb(20, 238, 195);
     text-decoration: none;   
-    font-size: 1.5em;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
 }
-
+*/
 .join:hover {
-    background-color: black;   
-    color: rgb(0, 255, 0)
+    background-color: #254052;   
+    color: white;
 }
 
 #background {
     height: 725px;
-    background-color: #f59ad1; 
+    background-color: #616042; 
 }
 
 .msg {
     background-color:#0ae4f4;
-    display: block
+    display: block;
+    line-height: 1.5em;
+    padding: 35px;
 }
+
+.msg p{
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
 
 footer {
     background-color:#808c64;
     font-size: 1.2em;
-
+    padding: 25px 50px;
+     margin-top: 200px;
 }
+
+footer .social img {
+    padding-top: 15px;    
+}
+
 
 footer a {
     text-align: center;
@@ -109,8 +181,8 @@ footer a {
 }
 
 footer a:hover {
-    background-color: black;
-    color: rgb(0, 255, 0)
+    background-color: #254052;   
+    color: white;
 }
 
 
